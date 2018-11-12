@@ -2,11 +2,11 @@
     <button class="accordion" id="create">Create</button><br>
     <div class="panel" id="create-panel">
             <label>UID:</label><br>
-            <input type="text" id="UID" value="Enter Value"><br>
+            <input type="text" name="UID" [(ngModel)]="UID" value="Enter Value"><br>
             <br>
 
             <label>RSS:</label><br>
-            <input type="text" id="RSS" value="Enter Value"><br>
+            <input type="text" name="RSS" [(ngModel)]="RSS" value="Enter Value"><br>
             <br>
 
             <button type="button" (click)="PostInputData()" >Test</button>

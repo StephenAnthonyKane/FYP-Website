@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestCreatorService } from '../services/request-creator.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,19 +10,21 @@ import { RequestCreatorService } from '../services/request-creator.service';
 
 export class HomeComponent implements OnInit {
 
-  private RequestCreatorSer;
+  private UID: string;
+  private RSS: string;
 
-  constructor() {}
+  constructor(private requester: RequestCreatorService) {}
 
   ngOnInit() {
   }
 
   PostInputData(){
     console.log("test");
-    var Uid = document.getElementById("UID").innerText;
-    var Rss = document.getElementById("RSS").innerText;
 
-    //this.RequestCreatorSer.PostData(Uid, Rss)
+    console.log(this.UID);
+    console.log(this.RSS);
+
+    this.requester.PostData(this.UID, this.RSS)
 
   }
 
