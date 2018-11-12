@@ -1,0 +1,30 @@
+<div class="Content">
+    <button class="accordion" id="create">Create</button><br>
+    <div class="panel" id="create-panel">
+            <label>UID:</label><br>
+            <input type="text" id="UID" value="Enter Value"><br>
+            <br>
+
+            <label>RSS:</label><br>
+            <input type="text" id="RSS" value="Enter Value"><br>
+            <br>
+
+            <button type="button" (click)="PostInputData()" >Test</button>
+            
+    </div>
+
+    <button class="accordion" id="recall">Recall</button><br>
+    <div class="panel" id="recall-panel">
+        <form id="recall-form1" class="formsytle">
+
+            <label>UID:</label><br>
+            <input type="text" id="UID" value="Enter Value"><br>
+            <br>
+
+            <input type="submit" name="Submit">
+        </form>
+    </div>
+
+    <p class="demostyle" id="demo">Output Area</p>
+
+</div>
