@@ -11,6 +11,7 @@ import { RequestCreatorService } from '../services/request-creator.service';
 export class HomeComponent implements OnInit {
 
   private UID: string;
+  private UIDToFind: string;
   private RSS: string;
 
   constructor(private requester: RequestCreatorService) {}
@@ -25,7 +26,10 @@ export class HomeComponent implements OnInit {
     console.log(this.RSS);
 
     this.requester.PostData(this.UID, this.RSS)
+  }
 
+  GetBeaconData(){
+    this.requester.GetData(this.UIDToFind)
   }
 
 }

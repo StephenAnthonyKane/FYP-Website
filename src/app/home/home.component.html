@@ -9,20 +9,17 @@
             <input type="text" name="RSS" [(ngModel)]="RSS" value="Enter Value"><br>
             <br>
 
-            <button type="button" (click)="PostInputData()" >Test</button>
+            <button type="button" (click)="PostInputData()" >Post</button>
             
     </div>
 
     <button class="accordion" id="recall">Recall</button><br>
     <div class="panel" id="recall-panel">
-        <form id="recall-form1" class="formsytle">
+        <label>UID:</label><br>
+        <input type="text" name="UIDToFind" [(ngModel)]="UIDToFind" value="Enter Value"><br>
+        <br>
 
-            <label>UID:</label><br>
-            <input type="text" id="UID" value="Enter Value"><br>
-            <br>
-
-            <input type="submit" name="Submit">
-        </form>
+        <button type="button" (click)="GetBeaconData()" >Get</button>
     </div>
 
     <p class="demostyle" id="demo">Output Area</p>
