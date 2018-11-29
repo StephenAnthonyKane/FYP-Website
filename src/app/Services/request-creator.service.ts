@@ -14,25 +14,24 @@ export class RequestCreatorService {
   constructor(private http: HttpClient) { }
 
   PostData(BeaconUID: string, BeaconRSS: string){
-    this.requestUrl = 'http://149.157.121.68:8080/';
+    this.requestUrl = 'http://192.168.1.7:8080/';
 
-
-    this.httpHeader = {
-      headers: new HttpHeaders().set('Accept', 'application/json')
-                                .set('Content-Type', 'application/json')
-    };
+    this.httpHeader = {};
 
     this.params ={
       UID: BeaconUID,
       RSS: BeaconRSS
     };
 
-    var t=this.http.post(this.requestUrl, this.params, this.httpHeader);
-    console.log(t);
+    console.log(this.requestUrl);
+    console.log(this.params);
+    console.log(this.httpHeader);
+
+    this.http.post(this.requestUrl, this.params, this.httpHeader);
   }
 
   GetData(BeaconUID: string){
-    this.requestUrl = 'http://149.157.121.68:8080/';
+    this.requestUrl = 'http://192.168.1.7:8080/';
     //?UID='+BeaconUID
 
     this.httpHeader = {

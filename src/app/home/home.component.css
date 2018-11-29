@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 .Content {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
     background-color: white;
 }
@@ -46,5 +46,15 @@ div.panel {
 .demostyle {
     text-align: center;
     font-size: xx-large;
+    margin: auto;
+}
+
+.map {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.mapArea{
     margin: auto;
 }

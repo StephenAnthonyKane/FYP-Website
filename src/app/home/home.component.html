@@ -1,27 +1,5 @@
 <div class="Content">
-    <button class="accordion" id="create">Create</button><br>
-    <div class="panel" id="create-panel">
-            <label>UID:</label><br>
-            <input type="text" name="UID" [(ngModel)]="UID" value="Enter Value"><br>
-            <br>
-
-            <label>RSS:</label><br>
-            <input type="text" name="RSS" [(ngModel)]="RSS" value="Enter Value"><br>
-            <br>
-
-            <button type="button" (click)="PostInputData()" >Post</button>
-            
+    <div class="mapArera">
+            <img src="../../assets/finalYearLab.PNG" class="map">
     </div>
-
-    <button class="accordion" id="recall">Recall</button><br>
-    <div class="panel" id="recall-panel">
-        <label>UID:</label><br>
-        <input type="text" name="UIDToFind" [(ngModel)]="UIDToFind" value="Enter Value"><br>
-        <br>
-
-        <button type="button" (click)="GetBeaconData()" >Get</button>
-    </div>
-
-    <p class="demostyle" id="demo">Output Area</p>
-
 </div>
